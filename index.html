@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arigatou Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"> <i class='bx bxs-ghost'></i> ArigatouStore</a>
+
+
+    <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#addItems">Add Items</a></li>
+    </ul>
+
+    <div class="header-icon">
+        <i class='bx bx-search' id="search-icon"></i>
+        <a href="cart.html">
+            <i class='bx bx-cart' id="cart-icon"></i><span>0</span>
+        </a>
+    </div>
+
+    <div class="search-box">
+        <input type="search" name="" id="" placeholder="Search..">
+    </div>
+
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-text">
+            <h4>Shop Now!</h4>
+            <h1>New Arrival of <br>Anime Figures</h1>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+        <div class="home-img">
+            <img src="img/shopping.jpg">
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <div class="heading">
+            <h1>Our Products</h1>
+        </div>
+        <div class="product-container">
+
+            <div class="box">
+                <img src="img/kakashi.jpg" alt="">
+                <div class="content">
+                    <h2>Kakashi Hatake</h2>
+                    <p>Naruto</p>
+                    <span>$18</span>
+                    <a class='add-cart'>Add</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/midoriya.jpg" alt="">
+                <div class="content">
+                    <h2>Izuki Midoriya</h2>
+                    <p>My Hero Academia</p>
+                    <span>$20</span>
+                    <a class='add-cart'>Add</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/naruto.jpg" alt="">
+                <div class="content">
+                    <h2>Naruto Uzumaki</h2>
+                    <p>Naruto</p>
+                    <span>$21</span>
+                    <a class='add-cart'>Add</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/ryuk.jpg" alt="">
+                <div class="content">
+                    <h2>Ryuk</h2>
+                    <p>Death Note</p>
+                    <span>$25</span>
+                    <a class='add-cart'>Add</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/sasuke.jpg" alt="">
+                <div class="content">
+                    <h2>Sasuke Uchiha</h2>
+                    <p>Naruto</p>
+                    <span>$19</span>
+                    <a class='add-cart'>Add</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/satoru.jpg" alt="">
+                <div class="content">
+                    <h2>Satoru Gojo</h2>
+                    <p>Jujutsu Kaisen</p>
+                    <span>$26</span>
+                    <a class='add-cart'>Add</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/narutoShip.jpg" alt="">
+                <div class="content">
+                    <h2>Naruto</h2>
+                    <p>Naruto Shippuden</p>
+                    <span>$17</span>
+                    <a class='add-cart'>Add</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/itadori.jpg" alt="">
+                <div class="content">
+                    <h2>Yuji Itadori</h2>
+                    <p>Jujutsu Kaisen</p>
+                    <span>$18</span>
+                    <a class='add-cart'>Add</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="addItems" id="addItems">
+        <div class="heading">
+            <h1>Add Products</h1>
+        </div>
+        <form>
+            <div>
+                <input class="formInput" type="text" name="productName" id="productName" placeholder="Product Name">
+            </div>
+            <div>
+                <input class="formInput" type="text" name="info" id="info" placeholder="Brief Info">
+            </div>
+            <div>
+                <input class="formInput" type="number" name="price" id="price" placeholder="Price">
+            </div>
+            <button class="btn" type="reset">Reset</button>
+            <button class="btn" type="submit" onclick="add()" >Add Products</button>
+        </form>
+    </section>
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
